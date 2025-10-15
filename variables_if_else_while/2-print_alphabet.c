@@ -1,12 +1,14 @@
 #include <stdio.h>
+
 /**
- * main -
- * Return: Always 0 (success)
+ * main - Prints the alphabet in lowercase, followed by a new line
+ *
+ * Return: Always 0 (Success)
  */
-int  main(void)
+int main(void)
 {
 	char c;
-	
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
@@ -14,3 +16,4 @@ int  main(void)
 	putchar('\n');
 	return (0);
 }
+
