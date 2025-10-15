@@ -1,21 +1,27 @@
 #include <stdlib.h>
-/* more headers goes there */
+#include <time.h>
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints the last digit of a randomly generated number
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int n;
-	char last digit of = "is"
-
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 5)
-	       printf("int is greater than 5", n);
-	else if (n == 0)
- 	       printf("int and is 0");
-	else (n < 6 n != 0);
-	       printf("%c and is less than 6 and not 0", n);
+	/* your code goes there */
+	printf("Last digit of %d is %d ", n, n % 10);
+
+	if (n % 10 > 5)
+		printf("and is greater than 5\n");
+	else if (n % 10 == 0)
+		printf("and is 0\n");
+	else
+		printf("and is less than 6 and not 0\n");
 
 	return (0);
 }
