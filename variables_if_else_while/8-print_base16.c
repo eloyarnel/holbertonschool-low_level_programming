@@ -12,7 +12,6 @@ int main(void)
 
 	for (number = '0'; number <= '15'; number++)
 		putchar(number);
-
 	putchar('\n');
 
 	return (0);
