@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-	char c;
+	char alphabt;
 
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		putchar(c);
-	}
-	putchar('\n');
-	return (0);
+	for (alphabt = 'a'; alphabt <= 'z'; alphabt++)
+		if (c != 'q' && alphabt != 'e')
+			putchar(alphabt);
+				putchar('\n');
+				return (0);
 }
+
+
