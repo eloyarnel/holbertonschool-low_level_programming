@@ -11,8 +11,9 @@ int main(void)
 	int number;
 
 	for (number = '0'; number <= '15'; number++)
-		putchar(number);
-	putchar('\n');
+		printf("%d" , number);
+
+	printf('\n');
 
 	return (0);
 }
