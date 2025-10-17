@@ -1,1 +1,1 @@
-Read me for Project C for Holberton School.o
+Read me for Project C for Holberton School.
