@@ -5,11 +5,14 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
-	char a 
-	a = abcdefghijklmnopqrstuvwxyz
-	putchar('a')
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		putchar(c);
+	}
 	putchar('\n');
 	return (0);
 }
