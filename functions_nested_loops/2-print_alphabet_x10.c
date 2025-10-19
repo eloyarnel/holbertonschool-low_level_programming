@@ -8,10 +8,13 @@
  */
 void print_alphabet(void)
 {
-	char *alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-	while (*alphabet)
-		_putchar(*alphabet++);
-
+	void print_alphabet(char c){
+	for (int i = 0; i < 10; i++) {
+		_putchar(c);
+	}
 	_putchar('\n');
+	}
+	int main() {
+		print_char_ten_times_('x');
+	}
 }
