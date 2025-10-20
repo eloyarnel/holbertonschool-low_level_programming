@@ -5,21 +5,9 @@
  *
  * Return: The absolute value of r
  */
-int abs(int r);
+int _abs(int r)
 {
-	if (n < 0)
-	{
-		_putchar('-');
-		return (1);
-	}
-	else if (n)
-	{
-		_putchar('0');
-		return (0);
-	}
-	else
-	{
-		_putchar('-');
-		return (-1);
-	}
+	if (r < 0)
+		r = -r;
+	return (r);
 }
