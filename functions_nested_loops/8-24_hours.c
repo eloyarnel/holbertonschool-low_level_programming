@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * Main- write a function that prints every minute of the day of Jack Bauer.
