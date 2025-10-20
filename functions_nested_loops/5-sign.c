@@ -1,8 +1,11 @@
 #include "main.h"
 /**
- * main - write a function that prints the sing of a number
+ * print_sign - Prints the sign of a number
+ * @n: The number to check
  *
- * Return - Always 0
+ * Return: 1 if n is greater than zero,
+ * 0 if n is zero,
+ * -1 if n is less than zero
  */
 int print_sign(int n)
 {
