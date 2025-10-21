@@ -4,13 +4,13 @@
  *
  * Return: Nothing
  */
-void print_line_line(int n)
+void print_line(int n)
 {
-	int line;
+	int lin;
 
 	if (n > 0)
 	{
-		for (line = 0; line < n; line++)
+		for (lin = 0; lin < n; lin++)
 			_putchar('_');
 	}
 	_putchar('\n');
