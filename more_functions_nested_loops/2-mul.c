@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * int mul - a function that multiplies two intergers
- * @a @b: The character check
+ * mul - Multiplies two intergers
+ * @a: The firts integer
+ * @b: The second integer
  *
  *Return: The producct of a & b
  */
