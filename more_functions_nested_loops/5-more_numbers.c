@@ -5,14 +5,18 @@
  *
  * Return: Nothing
  */
-void more_numbers(void);
+void more_numbers(void)
 {
-	int numb, count;
+	int i, number;
 
-	for (number = '0'; number <= '14'; number++)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar((numb / 10) + '0');
-	_putchar((numb % 10) + '0');
+		for (number = 0; number <= 14; number++)
+		{
+			if (number >= 10)
+				_putchar((number / 10) + '0');
+			_putchar((number % 10) + '0');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
