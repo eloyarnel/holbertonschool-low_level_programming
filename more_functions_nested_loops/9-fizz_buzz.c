@@ -3,9 +3,9 @@
 /**
  * main - Prints the numbers from 1 to 100 with FizzBuzz rules
  *
- * Description: For multiples of three, prints "Fizz" instead of the number,
- * for multiples of five, prints "Buzz", and for numbers which are multiples
- * of both three and five, prints "FizzBuzz". Each output is separated by a space.
+ * Description: For multiples of three, prints "Fizz" instead of the number.
+ * For multiples of five, prints "Buzz". For numbers which are multiples of
+ * both three and five, prints "FizzBuzz". Each output is separated by a space.
  *
  * Return: Always 0 (Success)
  */
