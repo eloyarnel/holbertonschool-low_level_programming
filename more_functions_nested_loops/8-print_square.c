@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Write a function that prints a aquare, followed by a new line
- * @size: The size of the squeare. 
+ * @size: The size of the squeare.
  *
  */
 void print_square(int size)
