@@ -18,11 +18,11 @@ _putchar(' ');
 if (a[i] < 0)
 {
 _putchar('-');
-printf_number(-a[i]);
+printf_num(-a[i]);
 }
 else
 {
-printf_number(a[i]);
+printf_num(a[i]);
 }
 }
 _putchar('\n');
