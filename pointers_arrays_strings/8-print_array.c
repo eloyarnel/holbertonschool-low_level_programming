@@ -8,7 +8,6 @@
 void print_array(int *a, int n)
 {
 int i;
-int printf_number(int num);
 
 for (i = 0; i < n; i++)
 {
@@ -18,11 +17,11 @@ _putchar(' ');
 if (a[i] < 0)
 {
 _putchar('-');
-printf_num(-a[i]);
+printf_number(-a[i]);
 }
 else
 {
-printf_num(a[i]);
+printf_number(a[i]);
 }
 }
 _putchar('\n');
