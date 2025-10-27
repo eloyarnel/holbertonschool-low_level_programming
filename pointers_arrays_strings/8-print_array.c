@@ -7,22 +7,22 @@
  */
 void print_array(int *a, int n)
 {
-    int i;
+int i;
 
-    for (i = 0; i < n; i++)
-    {
-        if (i != 0)
-            _putchar(',');
-        _putchar(' ');
-        if (a[i] < 0)
-        {
-            _putchar('-');
-            print_number(-a[i]);
-        }
-        else
-        {
-            print_number(a[i]);
-        }
-    }
-    _putchar('\n');
+for (i = 0; i < n; i++)
+{
+if (i != 0)
+_putchar(',');
+_putchar(' ');
+if (a[i] < 0)
+{
+_putchar('-');
+print_number(-a[i]);
+}
+else
+{
+print_number(a[i]);
+}
+}
+_putchar('\n');
 }
