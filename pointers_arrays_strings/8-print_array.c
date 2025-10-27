@@ -6,7 +6,7 @@
  * Return: void
  */
 void print_array(int *a, int n)
-void print_number(int n)
+int _print_number(int n)
 {
 int i;
 
