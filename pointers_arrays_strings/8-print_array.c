@@ -17,11 +17,11 @@ _putchar(' ');
 if (a[i] < 0)
 {
 _putchar('-');
-print_number(-a[i]);
+printf_number(-a[i]);
 }
 else
 {
-print_number(a[i]);
+printf_number(a[i]);
 }
 }
 _putchar('\n');
