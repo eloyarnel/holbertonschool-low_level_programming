@@ -14,5 +14,5 @@ void print_array(int *a, int n);
 void print_number(int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
-char *_strcat(char *dest, char *src);
+char * _strcat(char *dest, char *src);
 #endif /*MAIN_H*/
