@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * sqrt_helper - helper function to find the square root
+ * sqrt_recursion - helper function to find the square root
  * @n: number to find the square root of
  * @guess: current guess for the square root
  * Return: the square root of n or -1 if not a perfect square
  */
-int sqrt_helper(int n, int guess)
+int sqrt_recursion(int n, int guess)
 {
 if (guess * guess == n)
 return (guess);
