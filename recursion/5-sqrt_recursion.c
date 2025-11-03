@@ -11,5 +11,5 @@ if (guess * guess == n)
 return (guess);
 if (guess * guess > n)
 return (-1);
-return (sqrt_helper(n, guess + 1));
+return (sqrt_recursion(n, guess + 1));
 }
