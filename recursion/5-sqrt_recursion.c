@@ -5,11 +5,11 @@
  * @guess: current guess for the square root
  * Return: the square root of n or -1 if not a perfect square
  */
-int sqrt_recursion(int n, int guess)
+int sqrt_helper(int n, int guess)
 {
 if (guess * guess == n)
 return (guess);
 if (guess * guess > n)
 return (-1);
-return (sqrt_recursion(n, guess + 1));
+return (sqrt_helper(n, guess + 1));
 }
