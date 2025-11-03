@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sqrt_recursion - helper function to find the square root
+ * _sqrt_recursion - helper function to find the square root
  * @n: number to find the square root of
  * @guess: current guess for the square root
  * Return: the square root of n or -1 if not a perfect square
