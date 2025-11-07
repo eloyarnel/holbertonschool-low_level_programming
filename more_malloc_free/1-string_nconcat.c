@@ -23,7 +23,7 @@ len2++;
 if (n >= len2)
 n = len2;
 
-new_str = malloc_checked(len1 + n + 1);
+new_str = malloc(len1 + n + 1);
 
 for (i = 0; i < len1; i++)
 new_str[i] = s1[i];
