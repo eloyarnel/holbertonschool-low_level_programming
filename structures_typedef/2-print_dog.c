@@ -8,6 +8,7 @@
 void print_dog(struct dog *d)
 {
 if (d == NULL)
+return (0);
 {
 printf("Dog is NULL\n");
 return;
