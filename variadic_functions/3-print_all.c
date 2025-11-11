@@ -9,54 +9,43 @@
 void print_all(const char * const format, ...)
 {
     va_list args;
-    unsigned int i = 0, printed = 0;
+    unsigned int i = 0, j;
+    char *str;
+    const char types[] = "cifs";
+    const char *separators[] = {"", ", ", ", ", ", "};
 
     va_start(args, format);
-
     while (format && format[i])
     {
-        switch (format[i])
+        j = 0;
+        while (types[j])
         {
-            case 'c':
-                if (printed)
-                    printf(", ");
-                printf("%c", va_arg(args, int));
-                printed = 1;
-                break;
-
-            case 'i':
-                if (printed)
-                    printf(", ");
-                printf("%d", va_arg(args, int));
-                printed = 1;
-                break;
-
-            case 'f':
-                if (printed)
-                    printf(", ");
-                printf("%f", (float)va_arg(args, double));
-                printed = 1;
-                break;
-
-            case 's':
+            if (format[i] == types[j])
             {
-                char *str = va_arg(args, char *);
-
-                if (printed)
-                    printf(", ");
-
-                if (str == NULL)
-                    printf("(nil)");
-                else
-                    printf("%s", str);
-
-                printed = 1;
+                switch (format[i])
+                {
+                    case 'c':
+                        printf("%s%c", separators[j], va_arg(args, int));
+                        break;
+                    case 'i':
+                        printf("%s%d", separators[j], va_arg(args, int));
+                        break;
+                    case 'f':
+                        printf("%s%f", separators[j], va_arg(args, double));
+                        break;
+                    case 's':
+                        str = va_arg(args, char *);
+                        if (!str)
+                            str = "(nil)";
+                        printf("%s%s", separators[j], str);
+                        break;
+                }
                 break;
             }
+            j++;
         }
         i++;
     }
-
     printf("\n");
     va_end(args);
 }
