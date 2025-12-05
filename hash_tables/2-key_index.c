@@ -10,5 +10,5 @@ unsigned long int hash;
 if (key == NULL || size == 0)
 return(0);
 hash = hash_djb2(key);
-return (hash % size);
+return (hash_djb2 (key) % size);
 }
