@@ -1,15 +1,18 @@
 #include <stdio.h>
+
 /**
- * 2args - prints all arguments it receives.
- * @argc: number of arguments.
- * @argv: array of arguments.
- * Return: void.
+ * main - prints all arguments received
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: Always 0
  */
-void 2args(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-i;
+int i;
+
 for (i = 0; i < argc; i++)
-{
 printf("%s\n", argv[i]);
-}
+
+return (0);
 }
