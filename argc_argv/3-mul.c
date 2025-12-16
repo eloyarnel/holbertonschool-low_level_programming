@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * mul - multiplies two numbers
  * @a: first number
