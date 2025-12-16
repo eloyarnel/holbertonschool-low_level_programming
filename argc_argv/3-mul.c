@@ -1,12 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * mul - multiplies two numbers
- * @a: first number
- * @b: second number
- * Return: the result of the multiplication
+ * main - multiplies two numbers
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: 0 on success, 1 if error
  */
-int mul(int a, int b)
+int main(int argc, char *argv[])
 {
-return (a * b);
+int a, b;
+
+if (argc != 3)
+{
+printf("Error\n");
+return (1);
+}
+
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+
+printf("%d\n", a * b);
+
+return (0);
 }
